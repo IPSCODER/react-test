@@ -1,0 +1,10 @@
+.tag{
+    padding: 5px 7px;
+    background-color: aquamarine;
+    margin-left: 5px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    border-radius: 4px;
+}
