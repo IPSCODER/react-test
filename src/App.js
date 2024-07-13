@@ -10,6 +10,7 @@ import { Suspense, lazy } from 'react';
 const Home = lazy( () => import("./pages/home/Home") )
 const About = lazy( () => import("./pages/about/About") )
 const Contact = lazy( () => import("./pages/contact/Contact") )
+const Assets = lazy( () => import("./pages/assets/Assets") )
 
 
 
@@ -22,6 +23,7 @@ function App() {
   <Route path='/' element={<Suspense fallback={<h1>Loading...</h1>} ><Home/></Suspense>} />
   <Route path='/about' element={<Suspense fallback={<h1>Loading...</h1>} ><About/></Suspense>} />
   <Route path='/contact' element={<Suspense fallback={<h1>Loading...</h1>} ><Contact/></Suspense>} />
+  <Route path='/assets' element={<Suspense fallback={<h1>Loading...</h1>} ><Assets/></Suspense>} />
 </Routes>
 </BrowserRouter>
 </>
